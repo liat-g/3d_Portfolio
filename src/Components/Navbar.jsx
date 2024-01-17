@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import MarkunreadIcon from '@mui/icons-material/Markunread';
 
 const Navbar = () => {
   return (
@@ -16,6 +17,10 @@ const Navbar = () => {
             </NavLink>
             <NavLink to ="/projects" className={({isActive}) => isActive ? 'text-blue-500' : 'text-black'}>
                 Projects
+            </NavLink>
+            
+            <NavLink to ="/contact" className={({isActive}) => isActive ? 'text-blue-500' : 'text-black'}>
+                <MarkunreadIcon />
             </NavLink>
         </nav>
     </header>
